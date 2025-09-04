@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,13 +59,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js";
       var config = {
-        dataUrl: buildUrl + "/d2d57372cf48ff7032ed14ef014f1e02.data",
-        frameworkUrl: buildUrl + "/60d201641677c0c6252666cf552bc51e.framework.js",
-        codeUrl: buildUrl + "/2a9bb92d6e0c528ddeef78bc83aa3f75.wasm",
+        dataUrl: buildUrl + "/bbed66dcfc48c4eeb38c611d660dc5f4.data",
+        frameworkUrl: buildUrl + "/959a690f6832f92b2ce08f18e2a2d8ca.framework.js",
+        codeUrl: buildUrl + "/67533e3b5bea2c2b527146036444e255.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Matemath",
         productName: "MathRoom",
-        productVersion: "1.1",
+        productVersion: "1.2",
         showBanner: unityShowBanner,
       };
 
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
