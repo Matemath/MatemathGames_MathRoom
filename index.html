@@ -57,20 +57,17 @@
       }
 
       var buildUrl = "Build";
-var version = "1.4"; // 👈 cambia este número en cada build nuevo
-
-var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js?v=" + version;
-var config = {
-  dataUrl: buildUrl + "/fd4e81f68298a845722803ef4b25bc30.data?v=" + version,
-  frameworkUrl: buildUrl + "/2e8a3065ea06e4de6087fb22f4fb158d.framework.js?v=" + version,
-  codeUrl: buildUrl + "/672b7c6d77ee17da7c7096b212c928a0.wasm?v=" + version,
-  streamingAssetsUrl: "StreamingAssets",
-  companyName: "Matemath",
-  productName: "MathRoom",
-  productVersion: version,
-  showBanner: unityShowBanner,
-};
-
+      var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/11dcafb9af85fd22691f29a0414f40c7.data",
+        frameworkUrl: buildUrl + "/4b7e5b0f50da6c65c9eecde7ea0122bc.framework.js",
+        codeUrl: buildUrl + "/01240bc6a0f055d00e31af6987c2a165.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Matemath",
+        productName: "MathRoom",
+        productVersion: "1.5",
+        showBanner: unityShowBanner,
+      };
 
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
@@ -97,8 +94,8 @@ var config = {
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
