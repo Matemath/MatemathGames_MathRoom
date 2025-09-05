@@ -57,17 +57,20 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/fd4e81f68298a845722803ef4b25bc30.data",
-        frameworkUrl: buildUrl + "/2e8a3065ea06e4de6087fb22f4fb158d.framework.js",
-        codeUrl: buildUrl + "/672b7c6d77ee17da7c7096b212c928a0.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Matemath",
-        productName: "MathRoom",
-        productVersion: "1.4",
-        showBanner: unityShowBanner,
-      };
+var version = "1.4"; // 👈 cambia este número en cada build nuevo
+
+var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js?v=" + version;
+var config = {
+  dataUrl: buildUrl + "/fd4e81f68298a845722803ef4b25bc30.data?v=" + version,
+  frameworkUrl: buildUrl + "/2e8a3065ea06e4de6087fb22f4fb158d.framework.js?v=" + version,
+  codeUrl: buildUrl + "/672b7c6d77ee17da7c7096b212c928a0.wasm?v=" + version,
+  streamingAssetsUrl: "StreamingAssets",
+  companyName: "Matemath",
+  productName: "MathRoom",
+  productVersion: version,
+  showBanner: unityShowBanner,
+};
+
 
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
